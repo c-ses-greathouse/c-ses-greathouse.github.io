@@ -38,17 +38,11 @@ h1 {
   gap: 10px
 }
 
-.nav-li:hover {
-    transition-duration: .5s;
-    transform: scale(170%);
-    
-}
-
 .nav-li {
   display: inline-block;
   padding: 0 10px;
   text-shadow: 0px 0px 5px #0e1324;
-  transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out
 }
 
 a {
@@ -57,7 +51,7 @@ a {
   font-size: 125%;
 }
 
-/* Container ara below the menu*/
+/* Container area below the menu*/
 
 main {
   background: #d3d6eb;
@@ -65,11 +59,13 @@ main {
   margin-top: 20px;
   border-radius: 15px;
   box-shadow: 0px 15px 5px 5px #556b8f;
+  
 }
 
 .sidebar {
   margin-right: 25px;
   padding: 15px;
+  
 }
 
 .sidebar-img {
@@ -108,4 +104,16 @@ h3 {
   margin: auto;
   margin-right: 5%;
   border-radius: 15px;
+}
+
+/* hovering */
+
+.nav-li:hover {
+    transition-duration: .5s;
+    transform: scale(120%);
+}
+
+a:hover{
+  color: white;
+  transition-duration: .7s;
 }
