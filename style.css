@@ -1,6 +1,6 @@
 body {
-  background: #85c4e5;
-  color: #0e1324;
+  background: #489991;
+  color: #4e0e29;
   padding: 10px;
   font-family: Tokyo, sans-serif;
   font-size: 120%;
@@ -14,18 +14,19 @@ body {
 /*navigation menu*/
 
 nav {
-  background: #556b8f;
+  background: #FFDDD2;
   margin: 0 auto;
   display: flex;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 5px 5px #0e1324;
+  box-shadow: 0px 0px 5px 5px #00383D;
 }
 
 h1 {
   display: flex;
   align-items: center;
+  color: #4e0e29;
 }
 
 #nav-ul {
@@ -41,25 +42,24 @@ h1 {
 .nav-li {
   display: inline-block;
   padding: 0 10px;
-  text-shadow: 0px 0px 5px #0e1324;
+  text-shadow: 0px 0px 5px #00383D;
   transition: all .5s ease-in-out
 }
 
 a {
   text-decoration: none;
-  color: #d3d6eb;
+  color: #EDF6F9;
   font-size: 125%;
 }
 
 /* Container area below the menu*/
 
 main {
-  background: #d3d6eb;
+  background: #FFDDD2;
   display: flex;
   margin-top: 20px;
   border-radius: 15px;
-  box-shadow: 0px 15px 5px 5px #556b8f;
-  
+  box-shadow: 0px 15px 5px 5px #00383D;
 }
 
 .sidebar {
@@ -100,7 +100,7 @@ h3 {
 }
 
 .content, .interests{
-  background-color: #64aacf;
+  background-color: #FE5D9F;
   margin: auto;
   margin-right: 5%;
   border-radius: 15px;
