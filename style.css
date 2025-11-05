@@ -1,3 +1,17 @@
+/*entry*/
+
+@keyframes entry{
+  0% {
+    left: -200px;
+    opacity: 0%
+    }
+  100%{
+    left: 0px;
+    opacity:100%
+    }
+}
+
+
 body {
   background: #489991;
   color: #4e0e29;
@@ -14,19 +28,22 @@ body {
 /*navigation menu*/
 
 nav {
-  background: #FFDDD2;
+  background: #90CBC5;
   margin: 0 auto;
   display: flex;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 5px 5px #00383D;
+  box-shadow: 0px 0px 15px 1px #00383D;
+  position: relative;
+  animation-name: entry;
+  animation-duration: 1.8s;
 }
 
 h1 {
   display: flex;
   align-items: center;
-  color: #4e0e29;
+  color: #00383D;
 }
 
 #nav-ul {
@@ -37,19 +54,21 @@ h1 {
   justify-content: right;
   align-items: center;
   gap: 10px
+
 }
 
 .nav-li {
   display: inline-block;
   padding: 0 10px;
   text-shadow: 0px 0px 5px #00383D;
-  transition: all .5s ease-in-out
+  transition: all .2s ease-in-out;
 }
 
 a {
   text-decoration: none;
   color: #EDF6F9;
   font-size: 125%;
+  transition: all .7s ease-in-out;
 }
 
 /* Container area below the menu*/
@@ -58,18 +77,22 @@ main {
   background: #FFDDD2;
   display: flex;
   margin-top: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 15px 5px 5px #00383D;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px 2px #00383D;
+  position: relative;
+  animation-name: entry;
+  animation-duration: 1.8s;
 }
 
 .sidebar {
   margin-right: 25px;
   padding: 15px;
-  
 }
 
 .sidebar-img {
-  width: 200px;
+  width: 250px;
+  border-radius: 25%;
+  box-shadow: 0px 0px 5px 0px #4e0e29;
 }
 
 .content {
@@ -94,26 +117,64 @@ h3 {
 @font-face {
   font-family: "Tokyo";
   src: url("fonts/tokyo_3/Tokyo.ttf") format("truetype");
-  font-weight: 40;
+  font-weight: 30;
   font-style: normal;
   font-display: swap;
 }
 
-.content, .interests{
-  background-color: #FE5D9F;
+.content, .interests, .content-portfolio{
+  background-color: #FFDDD2;
   margin: auto;
-  margin-right: 5%;
-  border-radius: 15px;
+  margin-right: 35%;
+  border-radius: 35px;
+  transition: all .2s ease-in-out;
 }
 
 /* hovering */
 
 .nav-li:hover {
-    transition-duration: .5s;
     transform: scale(120%);
+}
+
+.content:hover, .interests:hover{
+  background-color: #FE5D9F;
+  margin: auto;
+  margin-right: 35%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 2px #CC0052;
 }
 
 a:hover{
   color: white;
-  transition-duration: .7s;
+}
+
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+  animation-name: entry;
+  animation-duration: 1.8s;
+}
+
+#portfolio li {
+  background: #FFDDD2;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: all .2s ease-in-out
+}
+
+#portfolio li:hover {
+  background-color: #FE5D9F;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 2px #CC0052;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #454545;
 }
